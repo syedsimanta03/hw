@@ -14,9 +14,9 @@ const Navbar = () => {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'Explore', href: 'explore' },
-    { name: 'Game', href: 'game' },
-    { name: 'Upcoming', href: 'upcoming' },
+    { name: 'Games', href: 'games' },
+    { name: 'Popular', href: 'popular' },
+    { name: 'New', href: 'new' },
   ]
 
   return (

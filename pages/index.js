@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Header from '@/components/global/Header'
 import Stats from '@/components/home/Stats'
 import Lanchpad from '@/components/home/Lanchpad'
+import Footer from '@/components/global/Footer'
 
 
 export default function Home() {
@@ -37,6 +38,7 @@ export default function Home() {
           <Lanchpad />
         </section>
       </main>
+      <Footer/>
     </>
   )
 }

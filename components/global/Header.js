@@ -11,6 +11,11 @@ export default function Example() {
           <p className='inline uppercase font-bold slide-up text-cyan-500'>
             SECURE & BEST PRICE NFT ARTS
           </p>
+          <img
+            className='mx-auto hidden md:inline ml-24  slide-up'
+            src='/slider-2.png'
+            alt='slider-2'
+          />
           <h1 className='font-bold text-4xl sm:text-5xl lg:text-6xl mb-8 mt-4 whitespace-nowrap slide-up title'>
             Discover the{' '}
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600'>
@@ -21,6 +26,11 @@ export default function Example() {
             collect & sell
             <br />
             Your art
+            <img
+              className='inline ml-2  slide-up'
+              src='/slider-3.png'
+              alt='slider-2'
+            />
           </h1>
           <p className='slide-up one '>
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -68,7 +78,6 @@ export default function Example() {
           />
         </div>
       </div>
-     
     </>
   )
 }
