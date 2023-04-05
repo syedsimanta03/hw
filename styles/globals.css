@@ -1,15 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://cdn.tailwindcss.com');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --font-family: "Poppins", sans-serif;
-  --hw-sub: #BBB0FF;
+  --font-family: 'Poppins', sans-serif;
+  --hw-sub: #bbb0ff;
   --hw-gray: #565660;
-  --hw-pr: #6242CD;
-  --hw-pr2: #D822DF;
+  --hw-pr: #6242cd;
+  --hw-pr2: #d822df;
   --hw-bg-2: #120412;
 
   --font-size-xl: clamp(1.71rem, 1.2vw + 1.41rem, 2.37rem);
@@ -36,7 +37,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--font-family);
-  background: #0000;
+  background: #3c0404;
   font-size: 1rem;
   font-weight: 400;
   color: #f1f1f1;
@@ -56,6 +57,16 @@ body::-webkit-scrollbar-thumb {
   border: 5px solid transparent;
   background-clip: content-box;
   background-color: var(--hw-gray);
+}
+
+.hbg {
+  background: url(/hbg.svg);
+  background-repeat: no-repeat;
+  background-position: right 0% bottom 100%;
+}
+
+.himgs {
+  max-width: 450px;
 }
 
 a {
@@ -104,17 +115,17 @@ span {
 
 .link:focus,
 .link:active {
-  color: var(--hw-orange);
+  color: var(--hw-gray);
   font-weight: bold;
 }
 .link::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--hw-orange);
+  background-color: var(--hw-gray);
   transform-origin: center;
   transform: translate(-50%, 0) scaleX(0);
   transition: transform 0.3s ease-in-out;
@@ -164,15 +175,11 @@ span {
   }
 }
 
-
-
-
 /*slide up text animation*/
 .slide-up {
   -webkit-animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
-          animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
+  animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
 }
-
 
 @-webkit-keyframes slide-up {
   0% {
@@ -180,7 +187,7 @@ span {
     opacity: 0;
   }
   50% {
-    opacity: .5;
+    opacity: 0.5;
   }
   100% {
     transform: translateY(0);
@@ -193,7 +200,7 @@ span {
     opacity: 0;
   }
   50% {
-    opacity: .5;
+    opacity: 0.5;
   }
   100% {
     transform: translateY(0);
@@ -202,22 +209,22 @@ span {
 }
 
 .sub {
-  -webkit-animation-delay: 0.50s;
-          animation-delay: 0.50s;
-          overflow: hidden;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  overflow: hidden;
 }
 .title {
--webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
-          overflow: hidden;
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+  overflow: hidden;
 }
 .one {
   -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-          overflow: hidden;
+  animation-delay: 1s;
+  overflow: hidden;
 }
 .oneThree {
   -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
-          overflow: hidden;
+  animation-delay: 1.3s;
+  overflow: hidden;
 }

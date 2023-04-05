@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 import Image from 'next/image'
+import Connect from './Connect'
 
 
 const Navbar = () => {
@@ -55,7 +56,7 @@ const Navbar = () => {
 
         {/* SocialMedia */}
         <div className='lg:inline-flex hidden'>
-         button
+        <Connect/>
         </div>
         {/* Mobile menu */}
         <div className='inline-flex lg:hidden'>
@@ -94,7 +95,7 @@ const Navbar = () => {
           ))}
           <div className='flex items-center space-x-4'>
             {/* SocialMedia */}
-            {mobile && <p>Button</p>}
+            {mobile &&  <Connect/>}
           </div>
         </div>
       </div>
