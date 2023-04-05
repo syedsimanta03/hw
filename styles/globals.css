@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --hw-sub: #BBB0FF;
+  --hw-gray: #565660;
+  --hw-pr: #6242CD;
+  --hw-pr2: #D822DF;
+  --hw-bg-2: #120412;
+
+  --font-size-xl: clamp(1.71rem, 1.2vw + 1.41rem, 2.37rem);
+  --font-size-xxl: clamp(2.14rem, 1.86vw + 1.67rem, 3.16rem);
+  --font-size-xxxl: clamp(2.67rem, 2.8vw + 1.97rem, 4.21rem);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--hw-pr);
+  color: var(--hw-sub);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+  background: #0000;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #f1f1f1;
+}
+
+body::-webkit-scrollbar {
+  width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--hw-bg-2);
+  border-radius: 0px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 5px solid transparent;
+  background-clip: content-box;
+  background-color: var(--hw-gray);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+  font-size: var(--font-size-xxxl);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: var(--font-size-xxl);
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+  line-height: 1.1;
+}
+
+p {
+  font-size: clamp(1.035rem, calc(12px + 0.54vw), 1.125rem);
+  line-height: 1.4;
+  color: #d2d2d1;
+}
+
+span {
+  color: var(--hw-sub);
+}
+
+.link {
+  position: relative;
+}
+
+.link:focus,
+.link:active {
+  color: var(--hw-orange);
+  font-weight: bold;
+}
+.link::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--hw-orange);
+  transform-origin: center;
+  transform: translate(-50%, 0) scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.link:hover::before {
+  transform: translate(-50%, 0) scaleX(1);
+}
+
+.menu-drop {
+  -webkit-animation: menu-toggle 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    both;
+  animation: menu-toggle 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  z-index: 9999;
+}
+
+@-webkit-keyframes menu-toggle {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+@keyframes menu-toggle {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+
+
+
+
+/*slide up text animation*/
+.slide-up {
+  -webkit-animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
+          animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+
+@-webkit-keyframes slide-up {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.sub {
+  -webkit-animation-delay: 0.50s;
+          animation-delay: 0.50s;
+          overflow: hidden;
+}
+.title {
+-webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+          overflow: hidden;
+}
+.one {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+          overflow: hidden;
+}
+.oneThree {
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+          overflow: hidden;
+}
