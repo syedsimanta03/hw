@@ -10,11 +10,11 @@ const Stats = () => {
   return (
     <>
       {stats.map((stat, index) => (
-        <div className='flex flex-col' key={index}>
-          <h3 className='font-bold text-xl 2xl:text-3xl sm:text-2xl whitespace-nowrap slide-up one text-cyan-500'>
+        <div className='flex flex-col text-center sm:text-left' key={index}>
+          <h3 className='font-bold text-lg 2xl:text-3xl sm:text-2xl sm:whitespace-nowrap slide-up one text-cyan-500'>
             {stat.info}
           </h3>
-          <h4 className='text-lg sm:text-2xl text-cr-orange whitespace-nowrap slide-up oneThree'>
+          <h4 className='text-md sm:text-2xl text-cr-orange sm:whitespace-nowrap slide-up oneThree'>
             {stat.label}
           </h4>
         </div>

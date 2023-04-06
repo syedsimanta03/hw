@@ -2,7 +2,7 @@
 import React from 'react'
 import NftCard from '../global/NftCard'
 
-const Lanchpad = () => {
+const Launchpad = () => {
   const items = [
     {
       image: 'l1.jpg',
@@ -37,7 +37,7 @@ const Lanchpad = () => {
     <div className='w-11/12 px-4 md:px-0 mx-auto py-32'>
       <div className='flex justify-between mb-24'>
         <div>
-          <h3 className='font-bold'>Lanchpad</h3>
+          <h3 className='font-bold'>Launchpad</h3>
           <img src='/line.svg' alt='line' />
         </div>
         <div className='flex gap-x-2'>
@@ -81,4 +81,4 @@ const Lanchpad = () => {
   )
 }
 
-export default Lanchpad
+export default Launchpad

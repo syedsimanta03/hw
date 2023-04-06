@@ -12,11 +12,11 @@ export default function Example() {
             SECURE & BEST PRICE NFT ARTS
           </p>
           <img
-            className='mx-auto hidden md:inline ml-24  slide-up'
+            className='mx-auto hidden md:inline ml-24 animate-bounce'
             src='/slider-2.png'
             alt='slider-2'
           />
-          <h1 className='font-bold text-4xl sm:text-5xl lg:text-6xl mb-8 mt-4 whitespace-nowrap slide-up title'>
+          <h1 className='font-bold text-2xl sm:text-5xl lg:text-6xl mb-8 mt-4 whitespace-nowrap slide-up title'>
             Discover the{' '}
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600'>
               NFT
@@ -27,7 +27,7 @@ export default function Example() {
             <br />
             Your art
             <img
-              className='inline ml-2  slide-up'
+              className='hidden sm:inline ml-2 slide-up'
               src='/slider-3.png'
               alt='slider-2'
             />
@@ -37,7 +37,7 @@ export default function Example() {
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam ullamco est sit aliqua dolor do amet sint.
           </p>
-          <div className='my-10 space-x-4 slide-up oneThree'>
+          <div className='my-10 space-x-4 slide-up oneThree text-center sm:text-left'>
             <Link href='/'>
               <button className='bg-gradient-to-r from-lime-500 lime-600 to-lime-600 mb-4 sm:mb-0 focus:ring ring-green-800 hover:bg-purple-500 hover:shadow-md shadow-green-500 shadow px-4 font-bold py-4 rounded-full text-cr-gray'>
                 Explore Now

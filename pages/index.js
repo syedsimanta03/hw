@@ -3,8 +3,9 @@ import Navbar from '@/components/global/Navbar'
 import Head from 'next/head'
 import Header from '@/components/global/Header'
 import Stats from '@/components/home/Stats'
-import Lanchpad from '@/components/home/Lanchpad'
+import Launchpad from '@/components/home/Launchpad'
 import Footer from '@/components/global/Footer'
+import Game from '@/components/home/Game'
 
 
 export default function Home() {
@@ -28,17 +29,20 @@ export default function Home() {
       </header>
       {/* Header-Info */}
       <div className='flex flex-wrap justify-between'>
-        <div className='grid grid-cols-2 md:justify-items-start justify-items-center gap-x-32 gap-y-10 md:max-w-lg w-full my-24 md:ml-16'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:justify-items-start justify-items-center gap-x-32 gap-y-10 md:max-w-lg w-full my-24 md:ml-16'>
           <Stats />
         </div>
         <img className='barg' alt='nft' src='/stats.png' />
       </div>
       <main>
         <section id='launchpad' className='bg-[#00000026]'>
-          <Lanchpad />
+          <Launchpad />
+        </section>
+        <section id='game' className='w-11/12 px-4 md:px-0 mx-auto my-32'>
+          <Game />
         </section>
       </main>
-      <Footer/>
+      <Footer />
     </>
   )
 }
