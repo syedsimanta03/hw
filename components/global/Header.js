@@ -16,7 +16,7 @@ export default function Example() {
             src='/slider-2.png'
             alt='slider-2'
           />
-          <h1 className='font-bold text-2xl sm:text-5xl lg:text-6xl mb-8 mt-4 whitespace-nowrap slide-up title'>
+          <h1 className='font-bold text-3xl sm:text-5xl lg:text-6xl mb-8 mt-4 whitespace-nowrap slide-up title'>
             Discover the{' '}
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600'>
               NFT

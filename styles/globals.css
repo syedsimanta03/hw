@@ -64,6 +64,17 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   background-position: right 0% bottom 100%;
 }
+.game {
+  background: url(/game.png);
+  background-repeat: no-repeat;
+  background-position: right 45% bottom 90%;
+}
+.popular {
+  background: url(/popular.png);
+  background-repeat: no-repeat;
+  background-position: right -80% bottom 45%;
+  background-color: #00000026 !important;
+}
 
 .himgs {
   max-width: 450px;

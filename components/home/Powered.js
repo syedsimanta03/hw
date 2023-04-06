@@ -1,43 +1,34 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react'
-import NftCard from '../global/NftCard'
 
-const Launchpad = () => {
+import Gamecard from '../global/Gamecard'
+
+const Powered = () => {
   const items = [
     {
       image: 'l1.jpg',
-      time: '13h : 28m : 36s',
-      name: 'Random Box: Whitelist',
-      author: 'Hakamurtaa',
-      price: 'Free Mint'
+      name: 'Arox City',
     },
+
     {
       image: 'l2.jpg',
-      time: '13h : 28m : 36s',
-      name: 'Random Box: Whitelist',
-      author: 'Hakamurtaa',
-      price: 'Free Mint'
+      name: 'Arox City',
     },
+
     {
       image: 'l3.jpg',
-      time: '13h : 28m : 36s',
-      name: 'Random Box: Public',
-      author: 'Hakamurtaa',
-      price: 'Free Mint'
+      name: 'Arox City',
     },
+
     {
-      image: 'l1.jpg',
-      time: '13h : 28m : 36s',
-      name: 'Random Box: Whitelist',
-      author: 'Hakamurtaa',
-      price: 'Free Mint'
+      image: 'l2.jpg',
+      name: 'Arox City',
     },
   ]
   return (
-    <div className='w-11/12 px-4 md:px-0 mx-auto py-12'>
-      <div className='flex justify-between mb-24'>
+    <>
+      <div className='flex justify-between py-32 '>
         <div>
-          <h3 className='font-bold'>Launchpad</h3>
+          <h3 className='font-bold'>GAME ON by mantle</h3>
           <img src='/line.svg' alt='line' />
         </div>
         <div className='flex gap-x-2'>
@@ -65,10 +56,10 @@ const Launchpad = () => {
           </svg>
         </div>
       </div>
-      {/* card */}
+
       <div className='flex flex-wrap md:justify-between justify-center gap-y-4'>
         {items.map((item) => (
-          <NftCard key={item.index} {...item} />
+          <Gamecard key={item.index} {...item} />
         ))}
       </div>
       <button
@@ -77,8 +68,8 @@ const Launchpad = () => {
       >
         View All
       </button>
-    </div>
+    </>
   )
 }
 
-export default Launchpad
+export default Powered

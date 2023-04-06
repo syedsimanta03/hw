@@ -6,6 +6,10 @@ import Stats from '@/components/home/Stats'
 import Launchpad from '@/components/home/Launchpad'
 import Footer from '@/components/global/Footer'
 import Game from '@/components/home/Game'
+import SpotItems from '@/components/home/SpotItems'
+import Powered from '@/components/home/Powered'
+import Popular from '@/components/home/Popular'
+import NewCollection from '@/components/home/NewCollection'
 
 
 export default function Home() {
@@ -20,7 +24,7 @@ export default function Home() {
         <link rel='icon' href='/logo.svg' />
       </Head>
       <header className='hbg'>
-        <nav className='w-11/12 px-4 md:px-0 mx-auto py-4 sm:py-12 md:py-6'>
+        <nav className='mx-auto py-4 sm:py-12 md:py-6'>
           <Navbar />
         </nav>
         <div className='w-11/12 px-4 md:px-0 mx-auto my-32'>
@@ -35,11 +39,42 @@ export default function Home() {
         <img className='barg' alt='nft' src='/stats.png' />
       </div>
       <main>
-        <section id='launchpad' className='bg-[#00000026]'>
+        <section
+          id='spot'
+          className='bg-[#00000026] w-11/12 px-4 md:px-0 mx-auto py-32'
+        >
+          <SpotItems />
+        </section>
+        <section id='launchpad'>
           <Launchpad />
         </section>
-        <section id='game' className='w-11/12 px-4 md:px-0 mx-auto my-32'>
+        <section
+          id='game'
+          className='w-11/12 px-4 md:px-0 mx-auto my-12 bg-[#00000026]'
+        >
+          <img
+            className='flex justify-end ml-auto'
+            alt='nft'
+            src='/ellipse1.png'
+          />
           <Game />
+          <img
+            className='flex justify-start mr-auto'
+            alt='nft'
+            src='/ellipse2.png'
+          />
+        </section>
+        <section
+          id='powered'
+          className='mb-24 w-11/12 px-4 md:px-0 mx-auto game'
+        >
+          <Powered />
+        </section>
+        <section id='Popular' className='popular'>
+          <Popular />
+        </section>
+        <section id='New' className='New'>
+          <NewCollection />
         </section>
       </main>
       <Footer />

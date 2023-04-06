@@ -3,7 +3,7 @@ import React from 'react'
 
 const GameItem = ({ image, author, price, earned, up, down }) => {
   return (
-    <div className='flex gap-y-2 justify-between p-4 rounded-lg shadow bg-gray-800 border-gray-700 shadow-purple-900 hover:shadow-green-900 w-full cursor-pointer'>
+    <div className='flex gap-y-2 justify-between p-4 rounded-lg bg-gray-800 border-gray-700 shadow hover:shadow-lg shadow-purple-900 hover:shadow-green-900 w-full cursor-pointer hover:scale-105  transition-transform duration-300'>
       <div className='flex'>
         <img
           className='rounded-full inline object-cover w-10 h-10 mr-2'
