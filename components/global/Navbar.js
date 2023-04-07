@@ -184,7 +184,99 @@ const Navbar = () => {
       </div>
       <div className={`${mobile ? 'menu-drop' : 'hidden'} lg:hidden`}>
         <div className='relative z-50 flex w-full flex-col space-y-4 bg-gray-800 px-6 py-8 rounded-md shadow-xl shadow-slate-900 divide-y divide-gray-700'>
-          <h4 className='mb-2 text-lg text-gray-400'>Useful Links:</h4>
+          <h4 className='mb-2 text-lg text-gray-400 '>
+            {/* steps */}
+            <ul
+              data-te-stepper-init=''
+              className='relative m-0 flex list-none justify-between overflow-hidden p-0 transition-[height] duration-200 ease-in-out'
+            >
+              {/*First item*/}
+              <li
+                data-te-stepper-step-ref=''
+                data-te-stepper-step-active=''
+                className='w-[4.5rem] flex-auto'
+              >
+                <div
+                  data-te-stepper-head-ref=''
+                  className="flex cursor-pointer items-center pl-2 leading-[1.3rem] no-underline after:ml-2 after:h-px after:w-full after:flex-1 after:content-[''] focus:outline-none after:bg-neutral-600 hover:bg-[#3b3b3b]"
+                >
+                  <span
+                    data-te-stepper-head-icon-ref=''
+                    className='my-6 mr-2 flex h-[1.938rem] w-[1.938rem] items-center justify-center rounded-full bg-[#ebedef] text-sm font-medium text-[#40464f]'
+                  >
+                    1
+                  </span>
+                  <span
+                    data-te-stepper-head-text-ref=''
+                    className='font-medium after:flex after:text-[0.8rem] after:content-[data-content] text-neutral-300'
+                  >
+                    Level 1
+                  </span>
+                </div>
+                <div
+                  data-te-stepper-content-ref=''
+                  className='absolute w-full p-4 transition-all duration-500 ease-in-out'
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+              </li>
+              {/*Second item*/}
+              <li data-te-stepper-step-ref='' className='w-[4.5rem] flex-auto'>
+                <div
+                  data-te-stepper-head-ref=''
+                  className="flex cursor-pointer items-center leading-[1.3rem] no-underline before:mr-2 before:h-px before:w-full before:flex-1 before:content-[''] after:ml-2 after:h-px after:w-full after:flex-1  after:content-['']  focus:outline-none before:bg-neutral-600 after:bg-neutral-600 hover:bg-[#3b3b3b]"
+                >
+                  <span
+                    data-te-stepper-head-icon-ref=''
+                    className='my-6 mr-2 flex h-[1.938rem] w-[1.938rem] items-center justify-center rounded-full bg-green-400 text-sm font-medium text-[#40464f]'
+                  >
+                    2
+                  </span>
+                  <span
+                    data-te-stepper-head-text-ref=''
+                    className='after:flex after:text-[0.8rem] after:content-[data-content] text-neutral-300'
+                  >
+                    Level 2
+                  </span>
+                </div>
+                <div
+                  data-te-stepper-content-ref=''
+                  className='absolute left-0 w-full translate-x-[150%] p-4 transition-all duration-500 ease-in-out'
+                >
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </li>
+              {/*Third item*/}
+              <li data-te-stepper-step-ref='' className='w-[4.5rem] flex-auto'>
+                <div
+                  data-te-stepper-head-ref=''
+                  className="flex cursor-pointer items-center pr-2 leading-[1.3rem] no-underline before:mr-2 before:h-px before:w-full before:flex-1  before:content-['']  focus:outline-none before:bg-neutral-600 after:bg-neutral-600 hover:bg-[#3b3b3b]"
+                >
+                  <span
+                    data-te-stepper-head-icon-ref=''
+                    className='my-6 mr-2 flex h-[1.938rem] w-[1.938rem] items-center justify-center rounded-full bg-[#ebedef] text-sm font-medium text-[#40464f]'
+                  >
+                    3
+                  </span>
+                  <span
+                    data-te-stepper-head-text-ref=''
+                    className='after:flex after:text-[0.8rem] after:content-[data-content] text-neutral-300'
+                  >
+                    Level 3
+                  </span>
+                </div>
+                <div
+                  data-te-stepper-content-ref=''
+                  className='absolute left-0 w-full translate-x-[150%] p-4 transition-all duration-500 ease-in-out'
+                >
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur.
+                </div>
+              </li>
+            </ul>
+          </h4>
           {navigation.map((link) => (
             <span
               key={link.name}
@@ -197,7 +289,7 @@ const Navbar = () => {
               <Link href={link.href}>{link.name}</Link>
             </span>
           ))}
-          <div className='flex items-center space-x-4'>
+          <div className='flex items-center pt-4 space-x-4'>
             {/* SocialMedia */}
             {mobile && <Connect />}
           </div>
