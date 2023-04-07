@@ -5,30 +5,30 @@ const Popular = () => {
   const items = [
     {
       name: 'Art Collection',
-      image1: 'l1.jpg',
-      image2: 'l2.jpg',
-      image3: 'l3.jpg',
-      image4: 'l1.jpg',
-      image5: 'l2.jpg',
-      image6: 'l3.jpg',
+      image1: 'product34.jpg',
+      image2: 'product39.jpg',
+      image3: 'product36.jpg',
+      image4: 'product37.jpg',
+      image5: 'product39.jpg',
+      image6: 'product36.jpg',
     },
     {
       name: 'Game Collection',
-      image1: 'l1.jpg',
-      image2: 'l2.jpg',
-      image3: 'l3.jpg',
-      image4: 'l1.jpg',
+      image1: 'product34.jpg',
+      image2: 'product37.jpg',
+      image3: 'product36.jpg',
+      image4: 'product34.jpg',
       image5: 'l2.jpg',
-      image6: 'l3.jpg',
+      image6: 'product36.jpg',
     },
     {
       name: 'Art Collection',
-      image1: 'l1.jpg',
-      image2: 'l2.jpg',
-      image3: 'l3.jpg',
-      image4: 'l1.jpg',
-      image5: 'l2.jpg',
-      image6: 'l3.jpg',
+      image1: 'product42.jpg',
+      image2: 'product67.jpg',
+      image3: 'product36.jpg',
+      image4: 'product34.jpg',
+      image5: 'product39.jpg',
+      image6: 'product36.jpg',
     },
   ]
   return (
@@ -46,7 +46,7 @@ const Popular = () => {
             height='24'
           >
             <path
-              d='M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 11V8L8 12L12 16V13H16V11H12Z'
+              d='M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 11V8L8 12product342 16V13H16V11H12Z'
               fill='rgba(98,66,205,1)'
             ></path>
           </svg>
@@ -57,7 +57,7 @@ const Popular = () => {
             height='24'
           >
             <path
-              d='M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 11H8V13H12V16L16 12L12 8V11Z'
+              d='M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 11H8V13H12V16product346 12product342 8V11Z'
               fill='rgba(98,66,205,1)'
             ></path>
           </svg>

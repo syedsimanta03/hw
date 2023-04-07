@@ -5,50 +5,50 @@ import CollectionItems from "./CollectionItems"
 const CollectionBanner = () => {
 const items = [
   {
-    image: 'l1.jpg',
+    image: 'product34.jpg',
     name: 'Arox City',
-    price: '$15 BIT'
+    price: '$15 BIT',
   },
 
   {
-    image: 'l2.jpg',
+    image: 'product39.jpg',
     name: 'Dox City',
-    price: '$15 BIT'
+    price: '$15 BIT',
   },
 
   {
-    image: 'l3.jpg',
+    image: 'product36.jpg',
     name: 'Ror City',
-    price: '$13 BIT'
+    price: '$13 BIT',
   },
 
   {
-    image: 'l2.jpg',
+    image: 'product37.jpg',
     name: 'Arox City',
-    price: '$12 BIT'
+    price: '$12 BIT',
   },
   {
-    image: 'l1.jpg',
+    image: 'product35.jpg',
     name: 'Arox City',
-    price: '$15 BIT'
+    price: '$15 BIT',
   },
 
   {
-    image: 'l2.jpg',
+    image: 'product38.jpg',
     name: 'Dox City',
-    price: '$15 BIT'
+    price: '$15 BIT',
   },
 
   {
-    image: 'l3.jpg',
+    image: 'product65.jpg',
     name: 'Ror City',
-    price: '$13 BIT'
+    price: '$13 BIT',
   },
 
   {
-    image: 'l2.jpg',
+    image: 'product67.jpg',
     name: 'Arox City',
-    price: '$12 BIT'
+    price: '$12 BIT',
   },
 ]
   return (
@@ -64,11 +64,11 @@ const items = [
           ></div>
           <div className='w-full space-y-2 text-center'>
             <img
-              className='rounded-full  object-cover w-[150px] mx-auto -mt-20'
-              src='l1.jpg'
-              alt='l1'
+              className='rounded-full border-4 border-green-500 p-1 object-cover w-[150px] h-[150px] mx-auto -mt-20'
+              src='avatar_3.png'
+              alt='product34'
             />
-            <h3 className='font-bold'>NFT Girl</h3>
+            <h3 className='font-bold'>NFT PRO</h3>
             <p className='text text-cyan-500'>Created by @0X_Porox</p>
           </div>
           {/* stats */}

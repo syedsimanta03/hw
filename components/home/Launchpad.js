@@ -9,28 +9,32 @@ const Launchpad = () => {
       time: '13h : 28m : 36s',
       name: 'Random Box: Whitelist',
       author: 'Hakamurtaa',
-      price: 'Free Mint'
+      price: 'Free Mint',
+      authorImg: 'author1.png'
     },
     {
       image: 'l2.jpg',
       time: '13h : 28m : 36s',
-      name: 'Random Box: Whitelist',
+      name: 'Toyr Box: Whitelist',
       author: 'Hakamurtaa',
-      price: 'Free Mint'
+      price: 'Free Mint',
+      authorImg: 'author14.png'
     },
     {
       image: 'l3.jpg',
       time: '13h : 28m : 36s',
       name: 'Random Box: Public',
       author: 'Hakamurtaa',
-      price: 'Free Mint'
+      price: 'Free Mint',
+      authorImg: 'author17.png'
     },
     {
       image: 'l1.jpg',
       time: '13h : 28m : 36s',
-      name: 'Random Box: Whitelist',
+      name: 'Special Box: Whitelist',
       author: 'Hakamurtaa',
-      price: 'Free Mint'
+      price: 'Free Mint',
+      authorImg: 'author19.png'
     },
   ]
   return (

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 
-const NftCard = ({image, time, name, author, price}) => {
+const NftCard = ({image, time, name, author, price, authorImg}) => {
   return (
     <div className='max-w-[350px]  rounded-lg shadow hover:shadow-lg shadow-purple-900 hover:shadow-green-900 cursor-pointer bg-gray-800 border-gray-700 hover:scale-105 transition-transform duration-300'>
       <a href='#'>
@@ -23,8 +23,8 @@ const NftCard = ({image, time, name, author, price}) => {
           <div className='flex'>
             <img
               className='rounded-full inline object-cover w-10 h-10 mr-2'
-              src='l1.jpg'
-              alt='l1'
+              src={authorImg}
+              alt={authorImg}
             />
             <div className='flex flex-col'>
               <small className='font-normal text-gray-500'>Creator</small>

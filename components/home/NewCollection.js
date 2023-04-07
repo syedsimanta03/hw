@@ -8,34 +8,33 @@ const NewCollection = () => {
    {
      name: 'Robin Team',
      price: '124',
-     image: 'l2.jpg'
+     image: 'product34.jpg',
    },
    {
      name: 'Artodox',
      price: '124',
-     image: 'l1.jpg'
+     image: 'product36.jpg',
    },
    {
      name: 'Teamdr',
      price: '124',
-     image: 'l3.jpg'
+     image: 'product39.jpg',
    },
    {
      name: 'Dreamy',
      price: '124',
-     image: 'l3.jpg'
+     image: 'product37.jpg',
    },
    {
      name: 'Arthodox',
      price: '124',
-     image: 'l2.jpg'
+     image: 'product42.jpg',
    },
    {
      name: 'Paradox',
      price: '124',
-     image: 'l1.jpg'
+     image: 'product67.jpg',
    },
-
  ]
   return (
     <>
