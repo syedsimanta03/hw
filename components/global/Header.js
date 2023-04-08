@@ -9,7 +9,7 @@ export default function Example() {
         {/* Header-Text */}
         <div>
           <p className='inline uppercase font-bold slide-up text-cyan-500'>
-            SECURE & BEST PRICE NFT ARTS
+            SECURE & BEST PRICE NFT ARTS ON MANTLE NETWORK
           </p>
           {/* <img
             className='mx-auto hidden md:inline ml-24 animate-bounce'
