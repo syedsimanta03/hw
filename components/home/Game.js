@@ -38,7 +38,7 @@ const Game = () => {
   return (
     <div className='flex flex-wrap justify-center md:justify-between'>
       {/* c1 */}
-      <div className='flex flex-col w-[30%]'>
+      <div className='flex flex-col md:md:w-[30%] w-full'>
         <h4 className='mb-10 text-xl font-bold tracking-tight text-cyan-500'>
           Top Games(24h Vol)
         </h4>
@@ -55,7 +55,7 @@ const Game = () => {
         </button>
       </div>
       {/* c1 */}
-      <div className='flex flex-col w-[30%]'>
+      <div className='flex flex-col md:w-[30%] w-full'>
         <h4 className='mb-10 text-xl font-bold tracking-tight text-cyan-500'>
           Top Games(Total Vol)
         </h4>
@@ -72,7 +72,7 @@ const Game = () => {
         </button>
       </div>
       {/* c1 */}
-      <div className='flex flex-col w-[30%]'>
+      <div className='flex flex-col md:w-[30%] w-full'>
         <h4 className='mb-10 text-xl font-bold tracking-tight text-cyan-500'>
           Most Followed Games
         </h4>

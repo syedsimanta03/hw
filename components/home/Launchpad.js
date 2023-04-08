@@ -8,7 +8,7 @@ const Launchpad = () => {
       image: 'l1.jpg',
       time: '13h : 28m : 36s',
       name: 'Random Box: Whitelist',
-      author: 'Hakamurtaa',
+      author: 'Haka',
       price: 'Free Mint',
       authorImg: 'author1.png'
     },
@@ -16,7 +16,7 @@ const Launchpad = () => {
       image: 'l2.jpg',
       time: '13h : 28m : 36s',
       name: 'Toyr Box: Whitelist',
-      author: 'Hakamurtaa',
+      author: 'Haka',
       price: 'Free Mint',
       authorImg: 'author14.png'
     },
@@ -24,15 +24,24 @@ const Launchpad = () => {
       image: 'l3.jpg',
       time: '13h : 28m : 36s',
       name: 'Random Box: Public',
-      author: 'Hakamurtaa',
+      author: 'Haka',
       price: 'Free Mint',
       authorImg: 'author17.png'
+    },
+  
+    {
+      image: 'l1.jpg',
+      time: '13h : 28m : 36s',
+      name: 'Special Box: Whitelist',
+      author: 'Haka',
+      price: 'Free Mint',
+      authorImg: 'author19.png'
     },
     {
       image: 'l1.jpg',
       time: '13h : 28m : 36s',
       name: 'Special Box: Whitelist',
-      author: 'Hakamurtaa',
+      author: 'Haka',
       price: 'Free Mint',
       authorImg: 'author19.png'
     },
@@ -70,7 +79,7 @@ const Launchpad = () => {
         </div>
       </div>
       {/* card */}
-      <div className='flex flex-wrap md:justify-between justify-center gap-y-4'>
+      <div className='flex overflow-x-auto md:justify-between gap-2'>
         {items.map((item) => (
           <NftCard key={item.index} {...item} />
         ))}

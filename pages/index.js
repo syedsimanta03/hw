@@ -47,7 +47,7 @@ export default function Home() {
         <section id='TopSellers' className='w-11/12 px-4 md:px-0 mx-auto my-10'>
           <TopSellers />
         </section>
-        <section id='Upcoming' className='w-11/12 px-4 md:px-0 mx-auto'>
+        <section id='Upcoming' className='w-11/12 px-4 md:px-0 mx-auto scroll-x'>
           <Upcoming />
         </section>
         <section id='launchpad'>

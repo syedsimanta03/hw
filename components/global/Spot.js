@@ -3,7 +3,7 @@ import React from 'react'
 
 const Spot = ({ image, time, timeLabel, price, priceLabel }) => {
   return (
-    <div className='w-[40%]'>
+    <div className='md:w-[40%] w-full'>
       <a href='#'>
         <img
           className='rounded-3xl object-cover w-full  h-[360px]'

@@ -40,7 +40,7 @@ const TopSellers = () => {
         <h3 className='font-bold'>✨Top Sellers</h3>
         <img src='/line.svg' alt='line' />
       </div>
-      <div className='flex flex-wrap gap-2 justify-center md:justify-between'>
+      <div className='flex flex-wrap md:gap-2 gap-5 justify-center md:justify-between'>
         {items.map((item) => (
           <div className='flex cursor-pointer' key={item.index + 1}>
             <img
