@@ -32,7 +32,7 @@ const Powered = () => {
     <>
       <div className='flex justify-between'>
         <div>
-          <h3 className='font-bold mb-10'>GAME ON by mantle</h3>
+          <h3 className='font-bold mb-10'>GAME ON by Mantle</h3>
           <img src='/line.svg' alt='line' />
         </div>
         <div className='flex gap-x-2'>

@@ -9,7 +9,9 @@ const Footer = () => {
           <div className='mb-6 md:mb-0'>
             <a href='https://hw.com/' className='flex items-center'>
               <img src='/logo.svg' className='h-8 mr-3' alt='hw Logo' />
-             
+              <span className='font-bold text-white text-lg inline whitespace-nowrap'>
+                Healcy Way
+              </span>
             </a>
           </div>
           <div className='grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3'>
