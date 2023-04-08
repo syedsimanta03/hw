@@ -10,6 +10,8 @@ import SpotItems from '@/components/home/SpotItems'
 import Powered from '@/components/home/Powered'
 import Popular from '@/components/home/Popular'
 import NewCollection from '@/components/home/NewCollection'
+import Upcoming from '@/components/home/Upcoming'
+import TopSellers from '@/components/home/TopSellers'
 
 
 export default function Home() {
@@ -23,46 +25,46 @@ export default function Home() {
         />
         <link rel='icon' href='/logo.svg' />
       </Head>
-      <header className='hbg'>
+      <header className='hbgxxx'>
         <nav className='mx-auto py-4 sm:py-12 md:py-6'>
           <Navbar />
         </nav>
-        <div className='w-11/12 px-4 md:px-0 mx-auto my-32'>
+        <div className='w-11/12 px-4 md:px-0 mx-auto my-10'>
           <Header />
         </div>
       </header>
       {/* Header-Info */}
-      <div className='flex flex-wrap justify-between'>
+      {/* <div className='flex flex-wrap justify-between'>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:justify-items-start justify-items-center gap-x-32 gap-y-10 md:max-w-lg w-full my-24 md:ml-16'>
           <Stats />
         </div>
         <img className='barg' alt='nft' src='/stats.png' />
-      </div>
+      </div> */}
       <main>
-        <section
-          id='spot'
-          className='bg-[#00000026] w-11/12 px-4 md:px-0 mx-auto py-32'
-        >
+        <section id='spot' className=' w-11/12 px-4 md:px-0 mx-auto'>
           <SpotItems />
+        </section>
+        <section id='TopSellers' className='w-11/12 px-4 md:px-0 mx-auto my-10'>
+          <TopSellers />
+        </section>
+        <section id='Upcoming' className='w-11/12 px-4 md:px-0 mx-auto'>
+          <Upcoming />
         </section>
         <section id='launchpad'>
           <Launchpad />
         </section>
-        <section
-          id='game'
-          className='w-11/12 px-4 md:px-0 mx-auto my-12 bg-[#00000026]'
-        >
-          <img
+        <section id='game' className='w-11/12 px-4 md:px-0 mx-auto mt-10'>
+{/*           <img
             className='flex justify-end ml-auto'
             alt='nft'
             src='/ellipse1.png'
-          />
+          /> */}
           <Game />
-          <img
+         {/*  <img
             className='flex justify-start mr-auto'
             alt='nft'
             src='/ellipse2.png'
-          />
+          /> */}
         </section>
         <section
           id='powered'
@@ -70,7 +72,7 @@ export default function Home() {
         >
           <Powered />
         </section>
-        <section id='Popular' className='popular'>
+        <section id='Popular' className='popularxx'>
           <Popular />
         </section>
         <section id='New' className='New'>

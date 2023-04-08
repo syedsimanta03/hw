@@ -38,7 +38,7 @@ const Launchpad = () => {
     },
   ]
   return (
-    <div className='w-11/12 px-4 md:px-0 mx-auto py-12'>
+    <div className='w-11/12 px-4 md:px-0 mx-auto'>
       <div className='flex justify-between mb-24'>
         <div>
           <h3 className='font-bold'>Launchpad</h3>
@@ -77,7 +77,7 @@ const Launchpad = () => {
       </div>
       <button
         type='button'
-        className='flex items-center mx-auto py-2.5 px-5 my-24 text-sm font-medium rounded-full hover:text-gray-500 focus:z-10 focus:ring-4  focus:ring-gray-700 bg-gray-800 text-gray-400 border-gray-600  hover:bg-gray-700'
+        className='flex items-center mx-auto py-2.5 px-5 mt-24 text-sm font-medium rounded-full hover:text-gray-500 focus:z-10 focus:ring-4  focus:ring-gray-700 bg-gray-800 text-gray-400 border-gray-600  hover:bg-gray-700'
       >
         View All
       </button>
