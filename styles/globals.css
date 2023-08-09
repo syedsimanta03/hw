@@ -36,10 +36,12 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--font-family);
-  background: #3c0404;
+  background:#0B0E1F;
+  /* background: url(/body-bg.webp);  */
   font-size: 1rem;
   font-weight: 400;
   color: #f1f1f1;
+
 }
 
 body::-webkit-scrollbar {
@@ -67,6 +69,11 @@ body::-webkit-scrollbar-thumb {
   background: url(/game.png);
   background-repeat: no-repeat;
   background-position: right 45% bottom 90%;
+}
+.body-bg {
+  background: url(/body-bg.webp);
+  /* background-repeat: no-repeat; */
+  /* background-position: right 45% bottom 90%; */
 }
 .popular {
   background: url(/popular.png);

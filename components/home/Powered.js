@@ -13,6 +13,10 @@ const Powered = () => {
       image: 'l2.jpg',
       name: 'Arox City',
     },
+    {
+      image: 'l2.jpg',
+      name: 'Arox City',
+    },
 
     {
       image: 'l3.jpg',
@@ -26,9 +30,9 @@ const Powered = () => {
   ]
   return (
     <>
-      <div className='flex justify-between py-32 '>
+      <div className='flex justify-between'>
         <div>
-          <h3 className='font-bold'>GAME ON by mantle</h3>
+          <h3 className='font-bold mb-10'>GAME ON by Mantle</h3>
           <img src='/line.svg' alt='line' />
         </div>
         <div className='flex gap-x-2'>
@@ -64,7 +68,7 @@ const Powered = () => {
       </div>
       <button
         type='button'
-        className='flex items-center mx-auto py-2.5 px-5 my-24 text-sm font-medium rounded-full hover:text-gray-500 focus:z-10 focus:ring-4  focus:ring-gray-700 bg-gray-800 text-gray-400 border-gray-600  hover:bg-gray-700'
+        className='flex items-center mx-auto py-2.5 px-5 mt-10 text-sm font-medium rounded-full hover:text-gray-500 focus:z-10 focus:ring-4  focus:ring-gray-700 bg-gray-800 text-gray-400 border-gray-600  hover:bg-gray-700'
       >
         View All
       </button>

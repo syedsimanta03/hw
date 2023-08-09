@@ -113,17 +113,18 @@ const Navbar = () => {
 
   return (
     <div className='z-[100] flex w-full flex-col'>
-      <div className='flex items-center justify-between'>
+      <div className='flex items-center justify-between w-11/12'>
         <div className='flex items-center'>
           <Link href='/'>
             <div className='relative flex h-14 w-16 -mt-2'>
-              <span className='flex items-center gap-2 ml-2'>
+              <span className='flex items-center ml-14'>
                 <Image
                   alt='nft project logo'
                   src='/logo.svg'
                   height={180}
                   width={180}
                 />
+                <span className='font-bold text-white text-lg inline whitespace-nowrap'>Healcy Way</span>
               </span>
             </div>
           </Link>

@@ -20,9 +20,9 @@ const SpotItems = () => {
     }
   ]
   return (
-    <div className='flex justify-center md:justify-around flex-wrap'>
+    <div className='flex flex-wrap justify-center md:justify-around'>
       {items.map((item) => (
-        <Spot key={item.index} {...item} />
+        <Spot key={item.index+1} {...item} />
       ))}
     </div>
   )

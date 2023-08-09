@@ -8,7 +8,7 @@ const Launchpad = () => {
       image: 'l1.jpg',
       time: '13h : 28m : 36s',
       name: 'Random Box: Whitelist',
-      author: 'Hakamurtaa',
+      author: 'Haka',
       price: 'Free Mint',
       authorImg: 'author1.png'
     },
@@ -16,7 +16,7 @@ const Launchpad = () => {
       image: 'l2.jpg',
       time: '13h : 28m : 36s',
       name: 'Toyr Box: Whitelist',
-      author: 'Hakamurtaa',
+      author: 'Haka',
       price: 'Free Mint',
       authorImg: 'author14.png'
     },
@@ -24,21 +24,30 @@ const Launchpad = () => {
       image: 'l3.jpg',
       time: '13h : 28m : 36s',
       name: 'Random Box: Public',
-      author: 'Hakamurtaa',
+      author: 'Haka',
       price: 'Free Mint',
       authorImg: 'author17.png'
+    },
+  
+    {
+      image: 'l1.jpg',
+      time: '13h : 28m : 36s',
+      name: 'Special Box: Whitelist',
+      author: 'Haka',
+      price: 'Free Mint',
+      authorImg: 'author19.png'
     },
     {
       image: 'l1.jpg',
       time: '13h : 28m : 36s',
       name: 'Special Box: Whitelist',
-      author: 'Hakamurtaa',
+      author: 'Haka',
       price: 'Free Mint',
       authorImg: 'author19.png'
     },
   ]
   return (
-    <div className='w-11/12 px-4 md:px-0 mx-auto py-12'>
+    <div className='w-11/12 px-4 md:px-0 mx-auto'>
       <div className='flex justify-between mb-24'>
         <div>
           <h3 className='font-bold'>Launchpad</h3>
@@ -70,14 +79,14 @@ const Launchpad = () => {
         </div>
       </div>
       {/* card */}
-      <div className='flex flex-wrap md:justify-between justify-center gap-y-4'>
+      <div className='flex overflow-x-auto md:justify-between gap-2'>
         {items.map((item) => (
           <NftCard key={item.index} {...item} />
         ))}
       </div>
       <button
         type='button'
-        className='flex items-center mx-auto py-2.5 px-5 my-24 text-sm font-medium rounded-full hover:text-gray-500 focus:z-10 focus:ring-4  focus:ring-gray-700 bg-gray-800 text-gray-400 border-gray-600  hover:bg-gray-700'
+        className='flex items-center mx-auto py-2.5 px-5 mt-24 text-sm font-medium rounded-full hover:text-gray-500 focus:z-10 focus:ring-4  focus:ring-gray-700 bg-gray-800 text-gray-400 border-gray-600  hover:bg-gray-700'
       >
         View All
       </button>

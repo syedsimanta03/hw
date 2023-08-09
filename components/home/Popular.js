@@ -33,7 +33,7 @@ const Popular = () => {
   ]
   return (
     <>
-      <div className='flex justify-between py-28 mb-24 w-11/12 px-4 md:px-0 mx-auto '>
+      <div className='flex justify-between mb-12 w-11/12 px-4 md:px-0 mx-auto '>
         <div>
           <h3 className='font-bold'>Popular Collection</h3>
           <img src='/line.svg' alt='line' />
@@ -75,7 +75,7 @@ const Popular = () => {
               <PopularCollection {...item} />
               <button
                 type='button'
-                className='flex items-center mx-auto py-2.5 px-5 my-10 text-sm font-medium rounded-full hover:text-gray-500 focus:z-10 focus:ring-4  focus:ring-gray-700 bg-gray-800 text-gray-400 border-gray-600  hover:bg-gray-700'
+                className='flex items-center mx-auto py-2.5 px-5 mt-10 text-sm font-medium rounded-full hover:text-gray-500 focus:z-10 focus:ring-4  focus:ring-gray-700 bg-gray-800 text-gray-400 border-gray-600  hover:bg-gray-700'
               >
                 View All
               </button>
