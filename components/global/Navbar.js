@@ -112,7 +112,7 @@ const Navbar = () => {
   ]
 
   return (
-    <div className='z-[100] flex w-full flex-col'>
+    <div className='z-[100] flex mx-auto w-11/12 flex-col'>
       <div className='flex items-center justify-between'>
         <div className='flex items-center'>
           <Link href='/'>
