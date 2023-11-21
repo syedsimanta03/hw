@@ -38,7 +38,7 @@ export default function Example() {
             veniam ullamco est sit aliqua dolor do amet sint.
           </p>
           <div className='my-10 space-x-4 slide-up oneThree text-center sm:text-left'>
-            <Link href='/'>
+            <Link href='/collection'>
               <button className='bg-gradient-to-r from-lime-500 lime-600 to-lime-600 mb-4 sm:mb-0 focus:ring ring-green-800 hover:bg-purple-500 hover:shadow-md shadow-green-500 shadow px-4 font-bold py-4 rounded-full text-cr-gray'>
                 Explore Now
               </button>
