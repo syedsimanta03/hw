@@ -24,7 +24,7 @@ export default function Home() {
         <link rel='icon' href='/logo.svg' />
       </Head>
       <header className='hbg'>
-        <nav className='mx-auto py-4 sm:py-12 md:py-6'>
+        <nav className='flex items-center w-full mx-auto py-4 sm:py-12 md:py-6'>
           <Navbar />
         </nav>
         <div className='w-11/12 px-4 md:px-0 mx-auto my-32'>
